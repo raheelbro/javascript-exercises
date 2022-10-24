@@ -14,6 +14,10 @@ const removeFromArray = function(array, ...args) {
         if (index > -1)
           array.splice(index, 1);
         });
+
+        // the above snippet was taken from the stackoverflow
+        // https://stackoverflow.com/questions/71484291/dealing-with-multiple-optional-arguments-in-a-javascript-function
+
     }
     
   console.log(array);
