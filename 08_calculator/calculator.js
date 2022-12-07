@@ -2,21 +2,10 @@ const add = (num1, num2) => num1 + num2;
 
 const subtract = (num1, num2) => num1 - num2;
 
-const sum = function (array) {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum = sum + array[i];
-  }
-  return sum;
-};
+const sum = (array) => array.reduce((sum, item) => sum + item, 0);
 
-const multiply = function (numbers) {
-  let multiplied = 1;
-  for (let i = 0; i < numbers.length; i++) {
-    multiplied = multiplied * numbers[i];
-  }
-  return multiplied;
-};
+const multiply = (numbers) =>
+  numbers.reduce((multiply, number) => multiply * number, 1);
 
 const power = (number, power) => Math.pow(number, power);
 
